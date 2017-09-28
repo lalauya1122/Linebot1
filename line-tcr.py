@@ -851,7 +851,6 @@ def bot(op):
                                      "STKID": "100",
                                      "STKPKGID": "1",
                                      "STKVER": "100" }
-                cl.sendMessage(msg)
                 ki.sendMessage(msg)
                 kk.sendMessage(msg)
             elif msg.text in ["Hehehe","Hehe","He","hehehe","hehe","he"]:
@@ -1422,10 +1421,8 @@ def bot(op):
          #-------------Fungsi Jam Update Finish-------------------#
 
             elif msg.text in ["Check"]:
-                    cl.sendText(msg.to, "Check sider")
                     ki.sendText(msg.to, "Check sider")
                     kk.sendText(msg.to, "Check sider")
-                    kc.sendText(msg.to, "Check sider")
                     try:
                         del wait2['readPoint'][msg.to]
                         del wait2['readMember'][msg.to]
@@ -1445,9 +1442,9 @@ def bot(op):
                                 print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "======Tercyduck====== %s\n=====Tukang Ngintip======\n%s\nCheck Time dan Date:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        kk.sendText(msg.to, "======Tercyduck====== %s\n=====Tukang Ngintip======\n%s\nCheck Time dan Date:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
-                        cl.sendText(msg.to, "Check Sider On ♪")
+                        kk.sendText(msg.to, "Check Sider On ♪")
 #-----------------------------------------------
 
 #-----------------------------------------------
